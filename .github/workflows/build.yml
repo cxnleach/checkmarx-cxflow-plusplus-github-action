@@ -36,7 +36,7 @@ jobs:
           ref: refs/tags/${{ inputs.tag }}
 
       - name: Execute build
-        run: tools/download-cxflow/gradlew build
+        run: tools/download-cxflow/gradlew build -p tools/download-cxflow
 
       - name: Test
         run: |
